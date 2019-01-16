@@ -1,0 +1,64 @@
+
+ #firstAnimation{
+            width: 100px;
+            height:100px;
+            background-color: azure;
+            
+            /* 5 دا التكرار  */ 
+            animation: moving 5s 5 linear 5s;
+            position: absolute;
+            
+        }
+
+#secondAnimation{
+     width: 100px;
+     height:100px;
+    border-radius: 50%;
+    top:10px;
+    left:10px;
+     background-color: red;
+      
+            /* 5 دا التكرار  */ 
+       animation: moving 2s 5 linear 2s ;
+    /* بيوقفوا على اخر مرحلة انا عملتها 
+    animation-fill-mode: forwards;
+    دا ببقى بيخلى ال الانيمشن ياخد اول مرحلة منه 0% قبل ما ال delay time يخلص 
+    animation-fill-mode: backwards; */
+    /* animation-fill-mode:both;
+    دا بقى لو عاوزة ال backwords و ال forwards يتنفذوا مع بعض */
+        position: absolute;
+}
+/* لو ليهم نفس الخواص احطهم جنب بعض و بينهم ,  زى ما حصل فى ال To و ال 100% */
+        @keyframes moving{
+            /* 0% */
+            from ,100%{
+                top:10px;
+                left:0px;
+                
+            }
+            
+            25%{
+                top:0px;
+                left:200px;
+                
+            }
+            
+            50%{
+                top:200px;
+                left:200px;
+                background-color: blueviolet;
+            }
+            
+            75%{
+                top:200px;
+                left:0px;
+            }
+            /* 100% */
+            /*
+            to{
+               top:0px;
+                left:0px;
+            }
+            */
+        }
+        

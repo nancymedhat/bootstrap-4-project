@@ -1,0 +1,48 @@
+
+/** 
+align-item : هو هو ال justify-content بس بيتعامل بالطول يعنى ب ال column لكن التانى بيتعامل بالعرض يعنى ب ال row
+justify-content : دى بتبسخدم عشان اشوف العناصر تااى جوا الديف دا احطها مكانها فين 
+)center flex-start flex-end space-between space-around)
+
+align-content :هى هى ال justify -content بس بالطول 
+flex-flow : flex-direction , flex-wrap بتاخد فيمه الحاجتين دول يعنى تعتبر شورت هاند كود
+
+flex-direction : row , row-reverce , column , column-reverse
+flex-wrap :wrap و دا المسؤل عن ان الحجم لو زاد ينزل تحت
+
+desplay:flex ; دا لو عاوزة ال الديف بتاعى يبقى لواحده مجبهوش حاجة
+desplay :inline-flex دا لو عاوزة الكونتينر بتاعى يجى جنبه عنصر تانى ك
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: 50px auto;
+    background-color: #EEE;
+    display: flex;
+    padding: 10px;
+}
+.container div {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 10px;
+    color: black;
+    width: 200px;
+    height: 100px;
+}
